@@ -16,6 +16,6 @@ public class main_1293 {
         Integer size_b = in.nextInt();
 
 
-        System.out.printf("На обработку всех прямоугольных панелей требуется %d нанограмм(а) сульфида",((size_a * size_b) * 2) * 5 );
+        System.out.printf("На обработку всех прямоугольных панелей требуется %d нанограмм(а) сульфида",((size_a * size_b) * 2) * quantity );
     }
 }
