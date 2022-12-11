@@ -14,7 +14,7 @@ public class Example7 {
 
         char[] array = new char[size];
         for(int i = 0; i < array.length; i++) {
-            array[i] = (char) letter++;
+            array[i] = letter++;
             letter++;
             System.out.print(array[i]);
         }
