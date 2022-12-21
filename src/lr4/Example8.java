@@ -24,18 +24,23 @@ public class Example8 {
         boolean check = false;
         while (!check){
         String choice = in.next();
-switch (choice){
-    case "y" :
-    case "Y" :
-        System.out.println(text);
+        switch (choice){
+         case "y" :
+         case "Y" :
+             for (int i = 0; i< ArrayChar.length; i++) {
+                 ArrayInt[i] = ArrayCharNew[i] - key;
+                 ArrayChar[i] = (char)ArrayInt[i];
+             }
+             encryptString = new String (ArrayChar);
+             System.out.println("Тест после расшифровки: "+ encryptString);
         check = true;
         break;
-    case "n" :
-    case "N" :
+         case "n" :
+         case "N" :
         System.out.println("До свидания!");
         check = true;
         break;
-    default:
+        default:
         System.out.println("Введите корректный ответ");
         check = false;
 }
