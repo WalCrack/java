@@ -13,25 +13,34 @@ public class Example8 {
         int[] ArrayInt = new int[text.length()];
         char[] ArrayCharNew = new char[ArrayChar.length];
 
-        for (int i = 0; i< ArrayChar.length; i++)
-        {
+        for (int i = 0; i< ArrayChar.length; i++) {
             ArrayInt[i] = ArrayChar[i] + key;
             ArrayCharNew[i] = (char)ArrayInt[i];
         }
         encryptString = new String (ArrayCharNew);
         System.out.println("Тест после шифрования: "+ encryptString);
+
         System.out.println("Выполнить обратное преобразование? (y/n)");
+        boolean check = false;
+        while (!check){
+        String choice = in.next();
+switch (choice){
+    case "y" :
+    case "Y" :
+        System.out.println(text);
+        check = true;
+        break;
+    case "n" :
+    case "N" :
+        System.out.println("До свидания!");
+        check = true;
+        break;
+    default:
+        System.out.println("Введите корректный ответ");
+        check = false;
+}
 
-        String choice = in.nextLine();
-        if (choice == "y" || choice == "Y") {
-            System.out.println(text);
         }
-        if (choice == "n" || choice == "N") {
-            System.out.println("До свидания!");
-        }
-        else
-            System.out.println("Введите корректный ответ");
-
 
         }
     }
