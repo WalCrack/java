@@ -3,7 +3,7 @@ package lr6;
 public class example4 {
     public static void main(String[] args) {
         Factorial example = new Factorial();
-        int num = 6;
+        int num = 8;
         System.out.println("Рекурсивный метод");
         int fact = example.factorial_1(num);
         System.out.println("Двойной факториал числа: "+num+"!! = "+fact);
