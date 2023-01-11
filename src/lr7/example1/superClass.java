@@ -11,11 +11,11 @@ public class superClass {
     }
     @Override
     public String toString() {
-        String superClassNameAndFieldValue;
-        superClassNameAndFieldValue = "\nСуперкласс" + "\n" +
+        String nameClass;
+        nameClass = "\nСуперкласс" + "\n" +
                 " Имя класса: " + this.getClass().getSimpleName() + "\n" +
                 " Значение 1 = " + this.getText1();
-        return superClassNameAndFieldValue;
+        return nameClass;
     }
     public String getText1() {
         return text1;

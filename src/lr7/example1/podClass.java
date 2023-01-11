@@ -14,13 +14,13 @@ public class podClass extends superClass {
     }
     @Override
     public String toString() {
-        String ClassNameAndFieldValue;
-        ClassNameAndFieldValue = "\nПодкласс" + "\n" +
+        String nameClass;
+        nameClass = "\nПодкласс" + "\n" +
                 " Class name: " + this.getClass().getSimpleName() + "\n" +
                 " Значение 1 = " + this.getText1() + "\n" +
                 " Значение 2 = " + this.text2 + "\n" +
                 " Значение 3 = " + this.text3;
-        return ClassNameAndFieldValue;
+        return nameClass;
     }
 
     public String getText3() {
