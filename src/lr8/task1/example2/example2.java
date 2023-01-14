@@ -23,7 +23,7 @@ public class example2 {
     public static void main(String[] args) {
         try {
             //с потоком связан файл
-            InputStream inFile = new FileInputStream("src\\lr8\\task1\\example2\\1.txt");
+            InputStream inFile = new FileInputStream("E:\\учеба\\Программирование\\java\\src\\lr8\\task1\\example2\\1.txt");
             readAllByByte(inFile);
             System.out.print("\n\n\n");
             inFile.close();

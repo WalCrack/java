@@ -10,7 +10,8 @@ public class example3 {
         while (true) {
             int count = in.read(buff);
             if (count != -1) { //если не конец файла
-                System.out.println("колличество = "+ count + ", buff = "+ Arrays.toString(buff) + ", str = "+ new String(buff, 0, count, "cp1251"));//"UTF8"
+                System.out.println("колличество = "+ count + ", buff = "+ Arrays.toString(buff) + ", str = "
+                        + new String(buff, 0, count, "cp1251"));//"UTF8"
             } else {
                 break;
             }
